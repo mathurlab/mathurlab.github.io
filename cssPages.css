@@ -1,0 +1,87 @@
+/* BASIC */
+#main { line-height:1.65em; margin-top:2.5em}
+div.article .section {padding:1em; }
+#main div.article {float:none; width: 100%; }
+#main div.article a {color:#1C2E80; font-weight: normal; border-bottom-color: #999;}
+	#main div.article a:hover {color:#000;}
+
+.references {font-family:Arial; font-size:11px; border-top:1px solid #999;}
+	.references ol li {color:#666;}
+
+#main div.article a.more, .more {display: block; text-align: right; border-bottom: none; font-weight: bold}
+
+/* LAB MEMBERS */
+.labmembersList li { padding: 1em 0em; margin:0.5em 0em 1em 0em; clear:both; }
+.labmembersList li img {border:1px solid lightblue; padding:1px; float: left; margin:0px 1em 0px 0px; }
+.labmembersList li.b img {float: right; margin: 0px 0px 0px 1em; }
+.labmembersList li h4 {margin: 0px; padding: 0em 0px 0.25em 0px; font-size: 1.8em; }
+.labmembersList li.b h4 {text-align:right;}
+
+.labmembersList ul.details {font-size:0.9em; color:#888; }
+.labmembersList ul.details li { margin-bottom: 0em; padding:0em;  }
+
+.labmembersList strong.position { display: block; padding: 0.25em 0em; }
+.labmembersList strong.mail { font-size:12px; padding:0px; color:#444; font-weight:normal; font-family:courier, consolas, "courier new"; }
+    .labmembersList strong.mail em {background:url(i/mail.gif) 100% 100% no-repeat; padding-right:85px; font-weight:normal;}
+
+
+/* PUBLICATIONS */
+.publicationslist dt { margin-top:1em; font-size:1.05em;}
+.publicationslist .toggleAbstract { color:#999; font-family:Verdana; font-size: 0.78em; text-transform:uppercase; font-weight:normal; border:0;}
+.publicationslist .toggleAbstract:hover {color:#333; }
+.publicationslist dd { color: #444; font-weight:bold; }
+.publicationslist dd.abstract {display: none; margin-bottom:1.5em; font-weight: normal; padding-left: 1em; border-left: 3px solid #DDD; }
+.publicationslist dd.abstract .abstract-heading {color:#888; text-transform: uppercase; font-size:11px; font-family:courier; font-weight: normal; background:#eee; padding:2px 3px; }
+.publicationslist dd.abstract p {margin-top:0.5em; }
+#main div.article a.pdfDownload { display:block; float:right; width: 31px; height:31px; color: #FFF; background:url(i/downloadIcon.gif) top left no-repeat; font-size:1px; border:0; }
+
+.onTheCover {display: none;}
+
+h2 .trigger {font-size:0.5em; float:right; color:#999; cursor:hand; cursor: pointer; }
+h2 .trigger:hover {color:#DDD;}
+
+.publicationslist img, .labMemberPage img {margin: 0px; padding: 0px; border: 1px solid #eee;}
+
+
+#coverPagesLayout { /*height: 160px; */ display:none; position:relative; margin:auto; width:100%; }
+#coverPagesLayout.fullView { margin-bottom:1em; }
+	#coverPages { overflow:none; padding:10px 1em; position:relative; left:0;}
+	#coverPages li { display:block; width: 105px; float:left; padding:0em 0.5em; }
+	#coverPages li.fullView {margin: 0em 5em 1em 0em; }
+
+	#coverPages li .cover { display:block; float:left; width: 105px; height:132px; position:relative; background:url(i/PublicationCovers/coverBackground.png) top left no-repeat; }
+		#coverPages li .cover img {position:absolute; top:6px; left:6px; margin: 0;}
+	#coverPages li a, #coverPages li a:link {display:block; border:0; color:#000; }
+	#coverPages .aboutCover {font-size:0.8em; }
+
+	.hasInfo {cursor: hand; cursor: pointer;}
+
+    #v-tooltip { position:absolute; background:#000; padding:5px 8px; color:#fff; font-size: 14px; font-family: Arial, Verdana, sans-serif; display:none; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius:5px; font-weight:bold; width:300px; }
+    #v-tooltip span {font-weight:normal; font-size:11px; color:#ddd;}
+
+
+/* RESEARCH */
+#researchSelector li { margin:0em 1.5%; border:1px solid #DDD; border-radius: 10px; height: 250px; }
+	#researchSelector li span {background:#333; display:block; height:50px; background: #333; border-radius: 10px 10px 0px 0px; background-position: top middle; }
+	#researchSelector dl {padding:1em; }
+	#researchSelector dt {font-weight:bold; font-size:1.05em; border-bottom:1px dotted #DDD; padding-bottom:0.2em; }
+
+
+#basic-modal-content {display:none;}
+
+/* Overlay */
+#simplemodal-overlay {background-color:#000; cursor:wait;}
+
+/* Container */
+#simplemodal-container { width:600px; color:#000; background-color:#fff; border:4px solid #444; padding:12px;}
+#simplemodal-container .simplemodal-data {padding:8px; font-family: Georgia; font-size:16px;}
+#simplemodal-container code {background:#141414; border-left:3px solid #65B43D; color:#bbb; display:block; font-size:12px; margin-bottom:12px; padding:4px 6px 6px;}
+#simplemodal-container a {color:#ddd;}
+	#simplemodal-container .onTheCover a {color: #222;}
+#simplemodal-container a.modalCloseImg {background:url(i/x.png) no-repeat; width:25px; height:29px; display:inline; z-index:3200; position:absolute; top:-15px; right:-16px; cursor:pointer; border: 0;}
+#simplemodal-container h3 {color:#84b8d9; font-size: 18px;}
+
+* a.fancybox-close {border:0; text-decoration: none}
+
+dt.highlight-paper, .highlight-paper {background: lightyellow; font-size:1.25em; font-family: Georgia; line-height: 1.4em;}
+	
