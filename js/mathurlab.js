@@ -56,11 +56,6 @@ $(function(){
     var $j = $('<ul id="jumper"></ul>');
     var h = [], t = "";
 
-    const url = window.location.pathname.split('/').filter(x => x.length);
-    if (url.length > 1){
-        h.push(['<li><a href="'+url.join("/")+'.html">&larr;</a></li>']);
-    }
-
     h.push(['<li class="pad">&rarr;</li>']);
 
     $("h2").not(".skipHeading").each(function(){
