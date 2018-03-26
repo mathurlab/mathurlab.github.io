@@ -56,12 +56,8 @@ $(function(){
     var $j = $('<ul id="jumper"></ul>');
     var h = [], t = "";
 
-    var url = window.location.href.split('/');
-    // url = url.slice(url.length - 3, url.length);
-    url.pop(); // getting rid of the last page.
-    // console.log(url, url[url.length - 1]);
-
-    if (url[url.length - 1].indexOf(".html") == -1 && url[url.length -1].indexOf("~") == -1){
+    const url = window.location.pathname.split('/').filter(x => x.length);
+    if (url.length > 1){
         h.push(['<li><a href="'+url.join("/")+'.html">&larr;</a></li>']);
     }
 
@@ -75,7 +71,7 @@ $(function(){
     $j.html(h.join(""));
     $("#nav li.active").append($j.fadeIn());
     $("#jumper").find("a").smoothScroll({offset:-10});
-    
+
     try {
         $(".highlight").find("a").smoothScroll({offset:-10});
     } catch(e) {}
