@@ -1,0 +1,86 @@
+<!doctype html><html>
+	<title>Laboratory of Plant Development and Interactions</title>
+	<link rel="stylesheet" href="cssDark.css" type="text/css" />
+	<script type="text/javascript">var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-1818581-2']); _gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script>
+	
+	<div id="all">
+		<div id="header">
+			<h1>Laboratory of<b>Plant Development and Interactions</b>
+		</h1>
+	</div>
+	<div id="nav">
+		<ul>
+			<li class="active">Home
+			<li><a href="labmembers.html">Lab Members</a>
+			<li><a href="research.html">Research</a>
+			<li><a href="publications.html">Publications</a>
+		</ul>
+	</div>
+	
+	<div id="main">
+		<div id="gallery">
+			<ul id="labGalleryContent"></ul>
+		</div>
+		<br>
+		<div class="article">
+			<div class="section">
+				<div class="content">
+					<div class="highlight">We are devoted to linking the internal working of a plant cell to its exterior form and function. The lab uses many beautiful plants and cell-types, scintillating &quot;living colours&quot;, state-of-the art live-cell imaging and documentation techniques to generate molecular-genetic and cell biological information on plant development and interactions.</div>
+					<h3 style="font-weight:bold">Our motto is "Fascination before Education"</h3>
+					
+				</div>
+				
+				<div class="article">
+					<div class="news">
+						<h3>Featured Publication</h3>
+						<dl>
+							<dt>Differential Coloring Reveals That Plastids Do Not Form Networks for Exchanging Macromolecules.</dt>
+							<dd>The Plant Cell. April. 2012.</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="cls"></div>
+				<ul class="awards">
+					<li><img src="i/NSERC.gif">
+					<li><img src="i/Ontario-Logo.gif">
+					<li><img src="i/CFI.gif">
+				</ul>
+					
+				</div>
+			</div>
+			
+			<div class="cls"></div>
+		</div>
+		<div id="footer">
+			<div class="affiliations">
+				<ul>
+					<li><a href="http://www.uoguelph.ca/"><img src="i/UoGLogo.gif" alt="University of Guelph"></a>
+					<li><a href="http://www.uoguelph.ca/cbs/"><img src="i/CBSLogo.gif" alt="College of Biological Sciences"></a>
+				</ul>
+			</div>
+			<div class="address">
+				<b>Department of Molecular and Cellular Biology, 4463 Science Complex.</b>
+				<br>University of Guelph, 50 Stone Road, Guelph, Ontario N1G 2W1, Canada
+				<br>Phone: 1 (519) 824-4120 Ext. 56636 &bull; Fax: 1 (519) 837-1802 &bull; jmathur@uoguelph.ca
+			</div>
+			Last Updated: July 15, 2012 &bull; <a href="http://www.anshuweb.com/">Site Designed by Anshu</a>.
+		</div>
+	</div>
+	
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/galleryItems.js"></script>
+	<script src="js/gallery.js"></script>
+	<script>
+		$(function(){
+			var $g = $('#gallery');
+			var gallery_items = [];
+			$.each(images, function(i, el){
+				gallery_items.push('<li><img alt="'+el.caption.replace(/"/g, "'")+'" src="'+el.url+'"><span>'+el.caption+'</span></li>'); 
+			});
+			gallery_items.sort(function() { 
+				return 0.5 - Math.random() 
+			}); 
+			gallery_items.push('<div class="cls labGalleryImage"></div>'); $g.find("ul").html(gallery_items.join("")); $g.labGallery(); 
+		})	
+	</script>
+</html>
