@@ -12,7 +12,7 @@ div.article .section {padding:1em; }
 
 /* LAB MEMBERS */
 .labmembersList li { padding: 1em 0em; margin:0.5em 0em 1em 0em; clear:both; }
-.labmembersList li img {border:1px solid lightblue; padding:1px; float: left; margin:0px 1em 0px 0px; }
+.labmembersList li img, .labmembersList li figure {border:1px solid lightblue; padding:1px; float: left; margin:0px 1em 0px 0px; }
 .labmembersList li.b img {float: right; margin: 0px 0px 0px 1em; }
 .labmembersList li h4 {margin: 0px; padding: 0em 0px 0.25em 0px; font-size: 1.8em; }
 .labmembersList li.b h4 {text-align:right;}
@@ -84,4 +84,3 @@ h2 .trigger:hover {color:#DDD;}
 * a.fancybox-close {border:0; text-decoration: none}
 
 dt.highlight-paper, .highlight-paper {background: lightyellow; font-size:1.25em; font-family: Georgia; line-height: 1.4em;}
-	
